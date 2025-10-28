@@ -28,7 +28,7 @@ VeoFlow automates the creation of product videos for fashion e-commerce catalogs
 ### Prerequisites
 
 - Node.js 20+
-- npm or yarn
+- npm or yarn 
 
 ### Installation
 
@@ -48,7 +48,7 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see the application.
+Open [http://localhost:3000](http://localhost:3000) to launch the app.
 
 ### Available Scripts
 
@@ -71,7 +71,6 @@ veoflow/
 │   ├── PROJECT_PLAN.md    # Product vision and requirements
 │   └── dev_rules/
 │       └── ui_rules.md    # UI/UX design system
-├── CLAUDE.md              # Developer guidance for Claude Code
 └── package.json
 ```
 
