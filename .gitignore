@@ -4,7 +4,6 @@
 /node_modules
 /.pnp
 .pnp.*
-docs/
 tasks/
 .claude/
 .vscode/
@@ -13,6 +12,8 @@ tasks/
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+
+docs/
 
 # testing
 /coverage
