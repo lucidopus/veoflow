@@ -79,11 +79,6 @@ veoflow/
 │   ├── globals.css        # Global styles & animations
 │   └── lib/
 │       └── theme-provider.tsx
-├── docs/                  # Documentation (gitignored)
-│   ├── phases/           # Implementation phases
-│   ├── PROJECT_PLAN.md   # Product vision
-│   └── dev_rules/
-│       └── ui_rules.md   # UI/UX design system
 └── package.json
 ```
 
@@ -99,18 +94,12 @@ NEXT_PUBLIC_SUPABASE_KEY=your_supabase_anon_key
 TRIGGER_DEV_PROJECT_TOKEN=your_trigger_token
 ```
 
-## Documentation
-
-- **[PROJECT_PLAN.md](docs/PROJECT_PLAN.md)** - Complete product vision, user experience goals, and success metrics
-- **[UI Rules](docs/dev_rules/ui_rules.md)** - Comprehensive UI/UX design system and component guidelines
-- **[CLAUDE.md](CLAUDE.md)** - Technical architecture and developer guidance
-
 ## Development Workflow
 
 This project follows a research-first approach:
 
 1. **Design System Implementation** - OKLCH colors, semantic tokens, Tailwind setup
-2. **UI Components** - Reusable components following ui_rules.md
+2. **UI Components** - Reusable components with consistent styling
 3. **API Research** - Deep dive into Firecrawl and Google Gemini capabilities
 4. **Integration** - Implement based on research findings
 5. **Orchestration** - Trigger.dev tasks for long-running operations
@@ -125,7 +114,6 @@ This project follows a research-first approach:
 
 ## Key Constraints
 
-- All UI must follow the design system in `docs/dev_rules/ui_rules.md`
 - Use OKLCH color space for all color definitions
 - Support both light and dark modes
 - Long-running tasks must use Trigger.dev (not API routes)
