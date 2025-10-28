@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.7",
+    "@supabase/ssr": "^0.7.0",
+    "@supabase/supabase-js": "^2.76.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.548.0",
@@ -23,9 +25,11 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^17.2.3",
     "eslint": "^9",
     "eslint-config-next": "16.0.0",
     "tailwindcss": "^4",
+    "tsx": "^4.20.6",
     "typescript": "^5"
   }
 }
