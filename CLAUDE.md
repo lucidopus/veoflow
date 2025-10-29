@@ -165,3 +165,48 @@ This project prioritizes:
 - **Scalability**: Batch processing for entire product catalogs
 
 Refer to `docs/PROJECT_PLAN.md` for the complete product vision and success metrics.
+
+## Output & Communication Guidelines
+
+### Task Completion Summaries
+
+After completing any moderately intensive task (refactoring, implementing features, testing, debugging, etc.):
+
+- Provide a **brief 2-4 line summary** of what was accomplished
+- Do **NOT** show verbose output, tool execution details, or ASCII art boxes
+- Do **NOT** include:
+  - Line-by-line edit summaries (e.g., `79 +              </a>`)
+  - `cat << EOF` blocks or shell command output
+  - Tool execution logs or Bash output
+  - Detailed progress indicators or expanded error messages
+  - Multiple levels of nested detail
+
+**Good Example:**
+```
+✅ Authentication system implemented. Added signup/login flow with JWT email verification,
+dashboard with personalized greeting, and dynamic navbar. Removed unused files. All tests passing.
+```
+
+**Bad Example:**
+```
+⏺ Bash(cat << 'EOF'…)
+  ⎿  ╔════════════════════════════════════════════════════════════════════════════╗
+     ║ VERBOSE OUTPUT WITH EDIT SUMMARIES AND TOOL DETAILS ║
+     [lots of repetitive detail]
+```
+
+### Commit Message Guidelines
+
+When committing code changes, use this format:
+
+```
+<short imperative title>
+
+<concise explanation of WHAT changed and WHY>
+
+Changes:
+- <bullet describing change>
+- <another change>
+```
+
+Focus on user impact and motivation, not implementation details.
