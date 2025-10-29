@@ -6,8 +6,6 @@ import { useEffect, useState } from 'react'
 export const dynamic = 'force-dynamic'
 import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/app/components/ui/Card'
-import UrlInputForm from '@/app/components/UrlInputForm'
 
 export default function DashboardPage() {
   const [user, setUser] = useState<{ email?: string } | null>(null)
@@ -70,53 +68,14 @@ export default function DashboardPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
-      {/* Main Content */}
-      <main className="container mx-auto px-4 py-8">
-        <div className="max-w-4xl mx-auto">
-          {/* Welcome Section */}
-          <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold mb-4">
-              Hello{' '}
-              <span className="bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
-                {profile?.username || profile?.first_name || user?.email || 'User'}
-              </span>
-              !
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Ready to transform your product collection into professional videos?
-            </p>
-          </div>
-
-          {/* URL Input Form */}
-          <Card className="mb-8">
-            <CardHeader>
-              <CardTitle>Start New Video Generation</CardTitle>
-              <CardDescription>
-                Enter a product collection URL to begin generating AI-powered model videos for your products.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <UrlInputForm />
-            </CardContent>
-          </Card>
-
-          {/* Recent Jobs Section (placeholder for future) */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Recent Jobs</CardTitle>
-              <CardDescription>
-                View the status of your recent video generation jobs.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="text-center py-8 text-muted-foreground">
-                <p>No jobs yet. Start by entering a collection URL above.</p>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </main>
+    <div className="min-h-screen flex items-center justify-center px-4">
+      <h2 className="text-3xl font-bold">
+        Hello{' '}
+        <span className="bg-linear-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+          {profile?.username || profile?.first_name || user?.email || 'User'}
+        </span>
+        !
+      </h2>
     </div>
   )
 }
