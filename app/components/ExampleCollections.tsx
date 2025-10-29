@@ -42,6 +42,13 @@ export default function ExampleCollections() {
       url: 'https://vintagevibes.com/shop',
       logo: 'V',
       description: 'Retro clothing'
+    },
+    {
+      id: 6,
+      name: 'Eco Chic',
+      url: 'https://ecochic.com/collections',
+      logo: 'E',
+      description: 'Sustainable fashion'
     }
   ];
 
