@@ -17,7 +17,7 @@ export interface VideoJob {
   error_message: string | null
   created_at: string
   updated_at: string
-  metadata: Record<string, any> | null
+  metadata: Record<string, unknown> | null
 }
 
 export interface Product {
@@ -29,6 +29,17 @@ export interface Product {
   status: ProductStatus
   video_url: string | null
   error_reason: string | null
+  created_at: string
+  updated_at: string
+}
+
+export interface Profile {
+  id: string
+  email: string
+  username: string | null
+  first_name: string | null
+  last_name: string | null
+  avatar_url: string | null
   created_at: string
   updated_at: string
 }
@@ -45,6 +56,11 @@ export interface Database {
         Row: Product
         Insert: Omit<Product, 'id' | 'created_at' | 'updated_at'>
         Update: Partial<Omit<Product, 'id' | 'created_at'>>
+      }
+      profiles: {
+        Row: Profile
+        Insert: Omit<Profile, 'id' | 'created_at' | 'updated_at'>
+        Update: Partial<Omit<Profile, 'id' | 'created_at'>>
       }
     }
     Views: {

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/lib/theme-provider";
+import HeaderNavigation from "@/app/components/HeaderNavigation";
+import Footer from "@/app/components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,7 +27,11 @@ export default function RootLayout({
           defaultTheme="system"
           storageKey="veoflow-theme"
         >
-          {children}
+          <HeaderNavigation />
+          <main className="min-h-screen">
+            {children}
+          </main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
