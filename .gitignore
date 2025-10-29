@@ -47,3 +47,5 @@ next-env.d.ts
 
 # documentation
 AUTHENTICATION_IMPLEMENTATION.md
+
+.trigger
