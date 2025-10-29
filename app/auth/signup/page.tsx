@@ -98,7 +98,7 @@ export default function SignUpPage() {
     <div className="min-h-screen flex items-center justify-center bg-background px-4 py-8">
       <Card className="w-full max-w-md shadow-2xl border-0 bg-card/95 backdrop-blur-sm">
         <CardHeader className="space-y-1 pb-6">
-          <CardTitle className="text-2xl font-bold text-center bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
+          <CardTitle className="text-2xl font-bold text-center bg-linear-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
             Create Account
           </CardTitle>
           <CardDescription className="text-center text-muted-foreground">
@@ -208,7 +208,7 @@ export default function SignUpPage() {
             )}
             <Button
               type="submit"
-              className="w-full h-12 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground font-medium shadow-lg hover:shadow-xl transition-all duration-200"
+              className="w-full h-12 bg-linear-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground font-medium shadow-lg hover:shadow-xl transition-all duration-200"
               disabled={isLoading}
             >
               {isLoading ? 'Creating Account...' : 'Create Account'}
