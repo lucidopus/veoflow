@@ -165,3 +165,30 @@ This project prioritizes:
 - **Scalability**: Batch processing for entire product catalogs
 
 Refer to `docs/PROJECT_PLAN.md` for the complete product vision and success metrics.
+
+## Commit Message Guidelines
+
+When committing code changes, use the following format:
+
+```
+<short imperative title>
+
+<concise explanation of WHAT changed and WHY>
+
+Changes:
+- <bullet describing change>
+- <another change>
+- ...
+```
+
+**Important Notes:**
+- Keep commit messages **clean and professional** - no verbose output or edit summaries
+- Do **NOT** include line-by-line diffs or code blocks in commit messages
+- Do **NOT** show edit summaries like:
+  ```
+  79 +              </a>
+  80 +              <a href="#" className="text-sm font-medium...
+  ```
+- Do **NOT** use `cat << EOF` blocks or verbose tooling output
+- After pushing, provide a **brief 1-2 line summary** of what changed (e.g., "Implemented authentication system and removed unused files")
+- Focus on user impact and motivation, not implementation details
